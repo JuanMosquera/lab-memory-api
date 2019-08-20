@@ -6,6 +6,7 @@ int main(int argc, const char* argv[]){
    
     int cantidad=100;
     int *y;
+    int *p;
 
     //printf("Cantidad de valores del array: ");
     //scanf("%d",&cantidad);
@@ -17,8 +18,11 @@ int main(int argc, const char* argv[]){
         //printf("Numero: ");
         //scanf("%d",&x[i]);
         y[i]=1;
+        if(i == 50){
+        	y[i]=*p;
+        }
     }
-    free(y);
+    
 
     //Visualizar Datos
     for(int i=0;i<=cantidad;i++)
