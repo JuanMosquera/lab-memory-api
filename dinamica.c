@@ -5,25 +5,25 @@
 int main(int argc, const char* argv[]){
    
     int cantidad=100;
-    int *x;
+    int *y;
 
     //printf("Cantidad de valores del array: ");
     //scanf("%d",&cantidad);
 
-    x = (int*)malloc(sizeof(int)*cantidad);
+    y = (int*)malloc(sizeof(int)*cantidad);
 
     for(int i=0;i<cantidad;i++)
     {
         //printf("Numero: ");
         //scanf("%d",&x[i]);
-        x[i]=1;
+        y[i]=1;
     }
-    free(x);
+    free(y);
 
     //Visualizar Datos
     for(int i=0;i<=cantidad;i++)
     {
-        printf(" %d",x[i]);
+        printf(" %d",y[i]);
     }
 
     return 0;
