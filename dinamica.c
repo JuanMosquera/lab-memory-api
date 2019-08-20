@@ -4,7 +4,7 @@
 
 int main(int argc, const char* argv[]){
    
-    int cantidad=10;
+    int cantidad=100;
     int *x;
 
     //printf("Cantidad de valores del array: ");
@@ -18,9 +18,10 @@ int main(int argc, const char* argv[]){
         //scanf("%d",&x[i]);
         x[i]=1;
     }
+    free(x);
 
     //Visualizar Datos
-    for(int i=0;i<cantidad;i++)
+    for(int i=0;i<=cantidad;i++)
     {
         printf(" %d",x[i]);
     }
